@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>KrishiVaani - Voice-First Multilingual Farming Assistant</title>
+    <meta name="description" content="Voice-first multilingual farming assistant empowering Indian farmers with real-time crop advisory, pest diagnosis, mandi market rates, and weather forecasts in 10 Indian languages." />
+    <meta property="og:title" content="KrishiVaani - Voice-First Multilingual Farming Assistant" />
+    <meta property="og:description" content="Voice-first multilingual farming assistant empowering Indian farmers with real-time crop advisory, pest diagnosis, mandi market rates, and weather forecasts in 10 Indian languages." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('krishivaani_theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-sans antialiased selection:bg-emerald-600 selection:text-white min-h-screen transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

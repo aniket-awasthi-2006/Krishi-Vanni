@@ -1,0 +1,35 @@
+{
+  "users": {
+    "9876543210": {
+      "id": "farmer-demo-01",
+      "mobile": "9876543210",
+      "name": "Ramesh Patel (रमेश पटेल)",
+      "pinHash": "$2b$10$2uPCM6gcu//Aen.OdhtjOODkKsSe1XYbuLHI/1BGNkWQCaMazboDW",
+      "language": "hi",
+      "state": "Madhya Pradesh",
+      "district": "Indore",
+      "primaryCrop": "Wheat (गेहूं)",
+      "createdAt": "2026-09-29T02:31:29.194Z",
+      "updatedAt": "2026-09-29T02:31:29.194Z"
+    }
+  },
+  "otps": {
+    "9876543210": {
+      "mobile": "9876543210",
+      "codeHash": "$2b$10$1C71VCKQAcee5wJU4Eefae8sjbsee72KlkFzhXxPtxw/m1Q0D00Ya",
+      "expiresAt": 1790651449056,
+      "attempts": 0,
+      "resendCount": 1,
+      "lastSentAt": 1790651149056
+    },
+    "9755787743": {
+      "mobile": "9755787743",
+      "codeHash": "$2b$10$VMEcrHROZgzkEChzs4IkEORnkd4hsjsE1w1qul0GTlsriHl.UihWe",
+      "expiresAt": 1790653964157,
+      "attempts": 0,
+      "resendCount": 1,
+      "lastSentAt": 1790653664157
+    }
+  },
+  "lockouts": {}
+}

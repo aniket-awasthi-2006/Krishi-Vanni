@@ -1,0 +1,8 @@
+{
+  "name": "KrishiVaani - Voice-First Multilingual Farming Assistant",
+  "description": "Voice-first multilingual farming assistant empowering Indian farmers with real-time crop advisory, pest diagnosis, mandi market rates, and weather forecasts in 10 Indian languages.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

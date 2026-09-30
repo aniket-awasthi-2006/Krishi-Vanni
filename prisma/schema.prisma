@@ -1,0 +1,38 @@
+// Prisma schema for KrishiVaani using MongoDB
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  mobile      String   @unique
+  name        String
+  pinHash     String
+  language    String   @default("hi")
+  state       String?
+  district    String?
+  primaryCrop String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([mobile])
+}
+
+model Otp {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  mobile      String   @unique
+  codeHash    String
+  expiresAt   DateTime
+  attempts    Int      @default(0)
+  resendCount Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([mobile])
+}
